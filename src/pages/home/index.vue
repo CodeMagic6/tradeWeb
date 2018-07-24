@@ -1,9 +1,73 @@
 <template>
-  <div>你好啊</div>
+  <div>
+    <tradeheader></tradeheader>
+  </div>
 </template>
 
 <script>
+import tradeheader from '../../components/tradeheader';
+export default {
+  components: {
+    tradeheader
+  },
+  data() {
+    return {};
+  }
+};
 </script>
 
-<style>
+<style lang="scss" scoped>
+/* CSS Document */
+/*======================整体样式=========================================================*/
+body {
+  font-size: 12px;
+  font-family: Times New Roman;
+  line-height: 20px;
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+}
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ll,
+dd,
+dl,
+div,
+form {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  overflow: hidden;
+}
+ul,
+li,
+ol,
+ll,
+dd,
+dl {
+  list-style-type: none;
+}
+img {
+  border: 0px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #bd0706;
+}
+
+.wd {
+  width: 1000px;
+  margin: 0px auto;
+  clear: both;
+}
 </style>
