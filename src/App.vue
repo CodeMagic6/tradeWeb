@@ -6,10 +6,10 @@
 
 <script>
 export default {
-
+  name: 'app'
 }
 </script>
 
 <style>
-
+@import '../static/normal';
 </style>

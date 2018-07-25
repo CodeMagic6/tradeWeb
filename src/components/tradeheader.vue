@@ -56,11 +56,16 @@
   height: 129px;
   background: url(../images/head.jpg) no-repeat center top;
 }
+.wd {
+  width: 1000px;
+  margin: 0px auto;
+  clear: both;
+}
 .head .banben {
   clear: both;
   height: 20px;
   line-height: 20px;
-  margin-top: 14px;
+  padding-top: 14px;
 }
 .head .banben div {
   display: block;
@@ -102,9 +107,17 @@
   margin-top: 20px;
   height: 50px;
 }
-.wd {
-  width: 1000px;
-  margin: 0px auto;
-  clear: both;
-}
+
+/*======================================导航===================================*/
+.menu{clear:both;height:44px;line-height:44px;background:url(../images/m_bg.jpg) repeat-x;}
+.menu .menu-con{float:left;height:44px;line-height:44px;width:765px;}
+.menu .menu-con li{float:left;width:125px;height:44px; text-align:center;color:#FFF;font-size:18px;}
+.menu .menu-con .m-line{width:2px;height:44px;background:url(../images/m_line.jpg) no-repeat left center;}
+.menu .menu-con li a{color:#FFF;width:125px;height:44px;}
+.menu .menu-con li a:hover{background:url(../images/m_on_bg.jpg) repeat-x;display:block; overflow:hidden;}
+
+.menu .menu-con li #nav_sel{background:url(../images/m_on_bg.jpg) repeat-x;display:block; overflow:hidden;}
+.menu .search{float:right;width:230px;margin-top:6px;}
+.menu .search .search-txt{float:right;width:171px;height:29px;background:url(../images/search_txt.jpg) no-repeat;border:0px;line-height:29px;color:#868686;}
+.menu .search .search-btn{float:right;width:43px;height:29px;background:url(../images/search_btn.jpg) no-repeat;border:0px;}
 </style>
