@@ -14,19 +14,32 @@
           <div class="am">NEWYORK</div>
         </div>
         <div class="phone">
-          <img src="" alt="">
+          <img src="../images/phone.png"
+            alt="">
         </div>
       </div>
     </div>
     <div class="menu">
       <div class="wd">
         <ul class="menu-con">
-          <li><a href="">Home</a></li>
-          <li><a href="">Products</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Hot Selling</a></li>
-          <li><a href="">News</a></li>
-          <li><a href="">Contact Us</a></li>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">Products</a>
+          </li>
+          <li>
+            <a href="">About Us</a>
+          </li>
+          <li>
+            <a href="">Hot Selling</a>
+          </li>
+          <li>
+            <a href="">News</a>
+          </li>
+          <li>
+            <a href="">Contact Us</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -34,14 +47,64 @@
 </template>
 
 <script>
-
 </script>
 
 <style lang="scss" scoped>
 /*=========================头部==================================*/
-.head{clear:both;height:129px;background:url() no-repeat center top;}
-.head .banben{clear:both;height:20px;line-height:20px;margin-top:14px;}
-.head .banben a{display:block; overflow:hidden;padding-left:17px;float:right;margin-left:5px;}
-
-.wd{width:1000px;margin:0px auto;clear:both;}
+.head {
+  clear: both;
+  height: 129px;
+  background: url(../images/head.jpg) no-repeat center top;
+}
+.head .banben {
+  clear: both;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 14px;
+}
+.head .banben div {
+  display: block;
+  overflow: hidden;
+  padding-left: 17px;
+  float: right;
+  margin-left: 5px;
+}
+.head .banben .cn {
+  background: url(../images/cn.jpg) no-repeat left center;
+}
+.head .banben .ko {
+  background: url(../images/hanguo.jpg) no-repeat left center;
+}
+.head .banben .jp {
+  background: url(../images/riben.jpg) no-repeat left center;
+}
+.head .banben .si {
+  background: url(../images/xinjiapo.jpg) no-repeat left center;
+}
+.head .banben .fra {
+  background: url(../images/faguo.jpg) no-repeat left center;
+}
+.head .banben .en {
+  background: url(../images/yingguo.jpg) no-repeat left center;
+}
+.head .banben .am {
+  background: url(../images/meiguo.jpg) no-repeat left center;
+}
+.head .banben .es {
+  background: url(../images/es.jpg) no-repeat left center;
+}
+.head .banben .pu {
+  background: url(../images/pu.jpg) no-repeat left center;
+}
+.head .phone {
+  clear: both;
+  text-align: right;
+  margin-top: 20px;
+  height: 50px;
+}
+.wd {
+  width: 1000px;
+  margin: 0px auto;
+  clear: both;
+}
 </style>
