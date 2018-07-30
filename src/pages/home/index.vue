@@ -124,21 +124,21 @@
                   <td><img alt=""
                       width="14"
                       height="13"
-                      src="/web/userfiles/tel.jpg" /></td>
+                      src="../../images/userfiles/tel.jpg" /></td>
                   <td>Tel:0086-755-29606763</td>
                 </tr>
                 <tr>
                   <td><img alt=""
                       width="14"
                       height="13"
-                      src="/web/userfiles/tel1.jpg" /></td>
+                      src="../../images/userfiles/tel1.jpg" /></td>
                   <td>Fax:0086-755-29604250</td>
                 </tr>
                 <tr>
                   <td><img alt=""
                       width="14"
                       height="13"
-                      src="/web/userfiles/email.jpg" /></td>
+                      src="../../images/userfiles/email.jpg" /></td>
                   <td>E-mail:
                     <a href="mailto:judith@szdqdz.com">judith@szdqdz.com</a>
                   </td>
@@ -147,7 +147,7 @@
                   <td style="vertical-align: top"><img alt=""
                       width="14"
                       height="13"
-                      src="/web/userfiles/add.jpg" /></td>
+                      src="../../images/userfiles/add.jpg" /></td>
                   <td>Add:
                     <span style="font-size: 12px">
                       <span style="color: black">2F, Block A, Shang Fang Industrial Park,&nbsp;
