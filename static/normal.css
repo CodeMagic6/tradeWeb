@@ -1,9 +1,53 @@
-body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
-body{font:12px "宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%}
-a{color:#172c45;text-decoration:none}
-a:hover{color:#cd0200;text-decoration:underline}
-em{font-style:normal}
-li{list-style:none}
-img{border:0;vertical-align:middle}
-table{border-collapse:collapse;border-spacing:0}
-p{word-wrap:break-word}
+/* CSS Document */
+/*======================整体样式=========================================================*/
+body {
+  font-size: 12px;
+  font-family: Times New Roman;
+  line-height: 20px;
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+}
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ll,
+dd,
+dl,
+div,
+form {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  overflow: hidden;
+}
+ul,
+li,
+ol,
+ll,
+dd,
+dl {
+  list-style-type: none;
+}
+img {
+  border: 0px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #bd0706;
+}
+
+.wd {
+  width: 1000px;
+  margin: 0px auto;
+  clear: both;
+}
