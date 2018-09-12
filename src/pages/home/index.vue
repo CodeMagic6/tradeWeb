@@ -2,31 +2,7 @@
   <div>
     <tradeheader></tradeheader>
     <banner></banner>
-    <div class="notice">
-      <div class="wd">
-        <div class="no-title">NEWS:</div>
-        <div>
-          <div>
-            <div>
-              <ul id="notice-list">
-                <li>
-                  <a href=""></a>
-                  <font color="#999999">
-                    <i>2015-03-28</i>
-                  </font>
-                </li>
-                <li>
-                  <a href=""></a>
-                  <font color="#999999">
-                    <i>2015-03-28</i>
-                  </font>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <notice></notice>
     <div class="center">
       <div class="wd">
         <!--about start-->
@@ -403,10 +379,12 @@
 <script>
 import tradeheader from '../../components/tradeheader';
 import banner from '../../components/banner';
+import notice from '../../components/notice';
 export default {
   components: {
     tradeheader,
-    banner
+    banner,
+    notice
   },
   data() {
     return {};
@@ -417,36 +395,6 @@ export default {
 <style lang="scss" scoped>
 /*=======================================banner===================================*/
 
-
-.notice {
-  clear: both;
-  height: 44px;
-  background: url(../../images/n_bg.jpg) repeat-x;
-}
-.notice .no-title {
-  float: left;
-  width: 70px;
-  background: url(../../images/laba.jpg) no-repeat left center;
-  color: #005194;
-  font-size: 14px;
-  height: 44px;
-  padding-left: 30px;
-  line-height: 44px;
-  font-weight: bold;
-}
-.notice .wd div {
-  float: left;
-  width: 570px;
-  height: 44px;
-}
-.notice .wd div ul {
-  clear: both;
-}
-.notice .wd div ul li {
-  clear: both;
-  height: 44px;
-  line-height: 44px;
-}
 
 .center {
   clear: both;
