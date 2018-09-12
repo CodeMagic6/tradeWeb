@@ -1,11 +1,7 @@
 <template>
   <div>
     <tradeheader></tradeheader>
-    <div class="banner">
-      <div class="show">
-
-      </div>
-    </div>
+    <banner></banner>
     <div class="notice">
       <div class="wd">
         <div class="no-title">NEWS:</div>
@@ -406,9 +402,11 @@
 
 <script>
 import tradeheader from '../../components/tradeheader';
+import banner from '../../components/banner';
 export default {
   components: {
-    tradeheader
+    tradeheader,
+    banner
   },
   data() {
     return {};
@@ -418,16 +416,7 @@ export default {
 
 <style lang="scss" scoped>
 /*=======================================banner===================================*/
-.banner {
-  clear: both;
-  height: 426px;
-  margin-top: 1px;
-}
-.nybanner {
-  clear: both;
-  height: 230px;
-  margin-top: 1px;
-}
+
 
 .notice {
   clear: both;
