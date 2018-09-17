@@ -61,6 +61,7 @@ export default {
   border: 1px solid #cfcfcf;
   background-color: #f6f6f6;
   line-height: 30px;
+  margin-bottom: 10px;
 }
 .left-menu {
   clear: both;

@@ -1,9 +1,15 @@
 <template>
   <div>
     <tradeheader></tradeheader>
-    <sBannerIcon></sBannerIcon>
-    <sBannerText></sBannerText>
-    <products></products>
+    <div class="center wd">
+      <div class="column-1">
+        <sBannerIcon></sBannerIcon>
+        <sBannerText></sBannerText>
+      </div>
+      <div class="product-main">
+        <products></products>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -26,5 +32,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.column-1 {
+  margin-top: 17px;
+  float: left;
+}
+.product-main {
+  margin-top: 17px;
+  float: right;
+}
 </style>
