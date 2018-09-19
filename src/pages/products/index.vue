@@ -9,6 +9,8 @@
       <div class="product-main">
         <products></products>
       </div>
+      <!-- <aboutUs></aboutUs> -->
+      <!-- <news></news> -->
     </div>
   </div>
 </template>
@@ -18,12 +20,16 @@ import tradeheader from '../../components/tradeheader';
 import sBannerIcon from '../../components/products/sBanner-icon';
 import sBannerText from '../../components/products/sBanner-text';
 import products from '../../components/products/product-menu';
+// import news from '../../components/news/news';
+// import aboutUs from '../../components/aboutUs/aboutBar';
 export default {
   components: {
     tradeheader,
     sBannerIcon,
     sBannerText,
     products
+    // news
+    // aboutUs
   },
   data() {
     return {};
