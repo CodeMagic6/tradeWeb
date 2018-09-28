@@ -1,3 +1,3 @@
-{
-  "home": 1
-}
+let WebSettings = {}
+
+export default WebSettings
