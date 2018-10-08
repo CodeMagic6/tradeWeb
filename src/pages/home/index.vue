@@ -5,11 +5,11 @@
     <notice></notice>
     <div class="center">
       <div class="wd">
-        <div v-if="currentTab == 0">
+        <div v-if="activeTab === 0">
           <cardList></cardList>
           <product></product>
         </div>
-        <div v-if="currentTab == 1">
+        <div v-if="activeTab === 1">
           <div class="column-1">
             <sBannerIcon></sBannerIcon>
             <sBannerText></sBannerText>
@@ -35,6 +35,7 @@ import cardList from '../../components/cardList';
 import sBannerIcon from '../../components/products/sBanner-icon';
 import sBannerText from '../../components/products/sBanner-text';
 import products from '../../components/products/product-menu';
+import { mapGetters, mapMutations } from 'vuex';
 export default {
   components: {
     tradeheader,
@@ -49,16 +50,22 @@ export default {
   },
   data() {
     return {
-      pages,
-      currentTab: 0
+      pages
     };
   },
+  computed: {
+    ...mapGetters('home', ['activeTab'])
+  },
   methods: {
-    switchTab: params => {
-      let { index } = params
-      this.currentTab = index;
-      console.log(this.currentTab);
+    ...mapMutations('home', ['ACTIVETAB']),
+    switchTab(params){
+      let { index } = params;
+      this.ACTIVETAB(index)
+      console.log(this.activeTab)
     }
+  },
+  mounted() {
+    console.log(this.activeTab);
   }
 };
 </script>
