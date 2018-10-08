@@ -14,39 +14,33 @@
           <div class="am">NEWYORK</div>
         </div>
         <div class="phone">
-          <img src="../images/phone.png"
-            alt="">
+          <img src="../images/phone.png" alt="">
+        </div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="wd">
+          <ul class="menu-con">
+            <li v-for="(name, index) in navName"
+              @click="$emit('switchTab', {name, index})"
+              :key="index">
+              {{name}}
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="menu">
-      <div class="wd">
-        <ul class="menu-con">
-          <li>
-            <a href="">Home</a>
-          </li>
-          <li>
-            <a href="">Products</a>
-          </li>
-          <li>
-            <a href="">About Us</a>
-          </li>
-          <li>
-            <a href="">Hot Selling</a>
-          </li>
-          <li>
-            <a href="">News</a>
-          </li>
-          <li>
-            <a href="">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
 </template>
 
 <script>
+import { navName } from '../constants';
+export default {
+  data() {
+    return {
+      navName
+    };
+  }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -107,17 +101,66 @@
   margin-top: 20px;
   height: 50px;
 }
-
 /*======================================导航===================================*/
-.menu{clear:both;height:44px;line-height:44px;background:url(../images/m_bg.jpg) repeat-x;}
-.menu .menu-con{float:left;height:44px;line-height:44px;width:765px;}
-.menu .menu-con li{float:left;width:125px;height:44px; text-align:center;color:#FFF;font-size:18px;}
-.menu .menu-con .m-line{width:2px;height:44px;background:url(../images/m_line.jpg) no-repeat left center;}
-.menu .menu-con li a{color:#FFF;width:125px;height:44px;}
-.menu .menu-con li a:hover{background:url(../images/m_on_bg.jpg) repeat-x;display:block; overflow:hidden;}
-
-.menu .menu-con li #nav_sel{background:url(../images/m_on_bg.jpg) repeat-x;display:block; overflow:hidden;}
-.menu .search{float:right;width:230px;margin-top:6px;}
-.menu .search .search-txt{float:right;width:171px;height:29px;background:url(../images/search_txt.jpg) no-repeat;border:0px;line-height:29px;color:#868686;}
-.menu .search .search-btn{float:right;width:43px;height:29px;background:url(../images/search_btn.jpg) no-repeat;border:0px;}
+.menu {
+  clear: both;
+  height: 44px;
+  line-height: 44px;
+  background: url(../images/m_bg.jpg) repeat-x;
+}
+.menu .menu-con {
+  float: left;
+  height: 44px;
+  line-height: 44px;
+  width: 765px;
+}
+.menu .menu-con li {
+  float: left;
+  width: 125px;
+  height: 44px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+.menu .menu-con .m-line {
+  width: 2px;
+  height: 44px;
+  background: url(../images/m_line.jpg) no-repeat left center;
+}
+.menu .menu-con li a {
+  color: #fff;
+  width: 125px;
+  height: 44px;
+}
+.menu .menu-con li a:hover {
+  background: url(../images/m_on_bg.jpg) repeat-x;
+  display: block;
+  overflow: hidden;
+}
+.menu .menu-con li #nav_sel {
+  background: url(../images/m_on_bg.jpg) repeat-x;
+  display: block;
+  overflow: hidden;
+}
+.menu .search {
+  float: right;
+  width: 230px;
+  margin-top: 6px;
+}
+.menu .search .search-txt {
+  float: right;
+  width: 171px;
+  height: 29px;
+  background: url(../images/search_txt.jpg) no-repeat;
+  border: 0px;
+  line-height: 29px;
+  color: #868686;
+}
+.menu .search .search-btn {
+  float: right;
+  width: 43px;
+  height: 29px;
+  background: url(../images/search_btn.jpg) no-repeat;
+  border: 0px;
+}
 </style>

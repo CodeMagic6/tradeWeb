@@ -1,12 +1,23 @@
 <template>
   <div>
-    <tradeheader></tradeheader>
+    <tradeheader @switchTab="switchTab"></tradeheader>
     <banner></banner>
     <notice></notice>
     <div class="center">
       <div class="wd">
-        <cardList></cardList>
-        <product></product>
+        <div v-if="currentTab == 0">
+          <cardList></cardList>
+          <product></product>
+        </div>
+        <div v-if="currentTab == 1">
+          <div class="column-1">
+            <sBannerIcon></sBannerIcon>
+            <sBannerText></sBannerText>
+          </div>
+          <div class="product-main">
+            <products></products>
+          </div>
+        </div>
       </div>
     </div>
     <tradefooter></tradefooter>
@@ -14,12 +25,16 @@
 </template>
 
 <script>
+import { pages } from '../../constants';
 import tradeheader from '../../components/tradeheader';
 import banner from '../../components/banner';
 import notice from '../../components/notice';
 import tradefooter from '../../components/tradefooter';
 import product from '../../components/product';
 import cardList from '../../components/cardList';
+import sBannerIcon from '../../components/products/sBanner-icon';
+import sBannerText from '../../components/products/sBanner-text';
+import products from '../../components/products/product-menu';
 export default {
   components: {
     tradeheader,
@@ -27,24 +42,41 @@ export default {
     notice,
     tradefooter,
     product,
-    cardList
+    cardList,
+    sBannerIcon,
+    sBannerText,
+    products
   },
   data() {
-    return {};
+    return {
+      pages,
+      currentTab: 0
+    };
+  },
+  methods: {
+    switchTab: params => {
+      let { index } = params
+      this.currentTab = index;
+      console.log(this.currentTab);
+    }
   }
 };
 </script>
 
 <style lang="scss" scoped>
-/*=======================================banner===================================*/
-
 .center {
   clear: both;
   margin-top: 17px;
 }
-
-/*============================================footer============================================*/
-
+// products
+.column-1 {
+  margin-top: 17px;
+  float: left;
+}
+.product-main {
+  margin-top: 17px;
+  float: right;
+}
 /*==========================================左边===================================================*/
 .left {
   float: left;
