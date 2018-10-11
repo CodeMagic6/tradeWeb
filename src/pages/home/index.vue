@@ -36,7 +36,7 @@
             <products></products>
           </div>
         </div>
-        <!-- <div v-if="activeTab === 4">
+        <div v-if="activeTab === 4">
           <div class="column-1">
             <sBannerIcon></sBannerIcon>
             <sBannerText></sBannerText>
@@ -44,8 +44,8 @@
           <div class="product-main">
             <aboutBar></aboutBar>
           </div>
-        </div> -->
-        <div v-if="activeTab === 4">
+        </div>
+        <!-- <div v-if="activeTab === 4">
           <div class="column-1">
             <sBannerIcon></sBannerIcon>
             <sBannerText></sBannerText>
@@ -53,7 +53,7 @@
           <div class="product-main">
             <productDetails></productDetails>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <tradefooter></tradefooter>
@@ -101,11 +101,10 @@ export default {
     switchTab(params){
       let { index } = params;
       this.ACTIVETAB(index)
-      console.log(this.activeTab)
     }
   },
   mounted() {
-    console.log(this.activeTab);
+
   }
 };
 </script>

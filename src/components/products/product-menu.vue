@@ -4,111 +4,30 @@
     <div class="right">
       <div class="right-top">
         <h1>Products</h1>
-        <span>You are here:
-          <a href=''>Home</a> >>
-          <a href=''>Products</a>
-        </span>
       </div>
       <div class="right-con">
         <ul class="prolist">
-          <li>
-            <a href=""
-              title="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack "
+          <li v-for="n in 9"
+            :key="n">
+            <a title="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack "
               class="pro-img"><img src="../../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
                 width="200"
-                height="200"
-                alt="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack " /></a>
-            <a href=""
-              title="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack ">DQDZ Ultr Slim ’Pow...</a>
-          </li>
-          <li>
-            <a href=""
-              title="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack "
-              class="pro-img"><img src="../../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
-                width="200"
-                height="200"
-                alt="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack " /></a>
-            <a href=""
-              title="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack ">DQDZ Ultr Slim ’Pow...</a>
-          </li>
-          <li>
-            <a href=""
-              title="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack "
-              class="pro-img"><img src="../../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
-                width="200"
-                height="200"
-                alt="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack " /></a>
-            <a href=""
-              title="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack ">DQDZ Ultr Slim ’Pow...</a>
-          </li>
-          <li>
-            <a href=""
-              title="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack "
-              class="pro-img"><img src="../../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
-                width="200"
-                height="200"
-                alt="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack " /></a>
-            <a href=""
-              title="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack ">DQDZ Ultr Slim ’Pow...</a>
-          </li>
-          <li>
-            <a href=""
-              title="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack "
-              class="pro-img"><img src="../../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
-                width="200"
-                height="200"
-                alt="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack " /></a>
-            <a href=""
-              title="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack ">DQDZ Ultr Slim ’Pow...</a>
-          </li>
-          <li>
-            <a href=""
-              title="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack "
-              class="pro-img"><img src="../../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
-                width="200"
-                height="200"
-                alt="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack " /></a>
-            <a href=""
-              title="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack ">DQDZ Ultr Slim ’Pow...</a>
-          </li>
-          <li>
-            <a href=""
-              title="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack "
-              class="pro-img"><img src="../../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
-                width="200"
-                height="200"
-                alt="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack " /></a>
-            <a href=""
-              title="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack ">DQDZ Ultr Slim ’Pow...</a>
-          </li>
-          <li>
-            <a href=""
-              title="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack "
-              class="pro-img"><img src="../../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
-                width="200"
-                height="200"
-                alt="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack " /></a>
-            <a href=""
-              title="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack ">DQDZ Ultr Slim ’Pow...</a>
-          </li>
-          <li>
-            <a href=""
-              title="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack "
-              class="pro-img"><img src="../../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
-                width="200"
-                height="200"
-                alt="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack " /></a>
-            <a href=""
-              title="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack ">DQDZ Ultr Slim ’Pow...</a>
+                height="200"/></a>
+            <a title="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack ">DQDZ Ultr Slim ’Pow...</a>
           </li>
         </ul>
         <!-- 分页 开始 -->
         <div class="page"
           style="text-align:center;">
-          <a class="no_pre" title="Previous">Prev</a>
-          <a class="current" title="Go1Page">1</a>
-          <a id="p2" href="" title="Go2Page">2</a>
-          <a href="" title="Next">Next</a>
+          <a class="no_pre"
+            title="Previous">Prev</a>
+          <a class="current"
+            title="Go1Page">1</a>
+          <a id="p2"
+            href=""
+            title="Go2Page">2</a>
+          <a href=""
+            title="Next">Next</a>
         </div>
         <!-- 分页 结束 -->
       </div>
@@ -126,27 +45,100 @@ export default {
 
   computed: {},
 
+  methods: {
+    initPageNum(){
+
+    },
+    initArr(){
+
+    },
+    gotoPage(){
+
+    },
+  },
+
   mounted() {},
 
   methods: {}
 };
 </script>
 <style lang='scss' scoped>
-.page{width:100%;text-align:center;clear:both;height:32px;padding:20px 0;overflow:hidden;}
-.page a{padding:4px 9px;border:1px solid #ccc;color:#505050;margin:0 1px;font-size:13px;text-align:center;}
-.page .more{border:0;}
-.page a:hover{background:#fff6db;border-color:#df5700;color:#ff6400;}
-.page .pre{font-weight:600;color:#ff6400;}
-.page .next{font-weight:600;color:#ff6400;}
-.page .pre:hover{background:#fff6db;border-color:#df5700;color:#ff6400;}
-.page .next:hover{background:#fff6db;border-color:#df5700;color:#ff6400;}
-.page .more:hover{background:none;color:#505050;}
-.page .current{background:#666;border-color:#CCC;color:#FFF;font-weight:700;}
-.page .current:hover{background:#fff6db;border-color:#df5700;color:#ff6400;font-weight:700;}
-.page .no_pre{color:#ccc;font-weight:600;}
-.page .no_pre:hover{color:#ccc;background:none;border-color:#CCC;}
-.page .no_next{color:#ccc;font-weight:600;}
-.page .no_next:hover{color:#ccc;background:none;border-color:#CCC;}
+.page {
+  width: 100%;
+  text-align: center;
+  clear: both;
+  height: 32px;
+  padding: 20px 0;
+  overflow: hidden;
+}
+.page a {
+  padding: 4px 9px;
+  border: 1px solid #ccc;
+  color: #505050;
+  margin: 0 1px;
+  font-size: 13px;
+  text-align: center;
+}
+.page .more {
+  border: 0;
+}
+.page a:hover {
+  background: #fff6db;
+  border-color: #df5700;
+  color: #ff6400;
+}
+.page .pre {
+  font-weight: 600;
+  color: #ff6400;
+}
+.page .next {
+  font-weight: 600;
+  color: #ff6400;
+}
+.page .pre:hover {
+  background: #fff6db;
+  border-color: #df5700;
+  color: #ff6400;
+}
+.page .next:hover {
+  background: #fff6db;
+  border-color: #df5700;
+  color: #ff6400;
+}
+.page .more:hover {
+  background: none;
+  color: #505050;
+}
+.page .current {
+  background: #666;
+  border-color: #ccc;
+  color: #fff;
+  font-weight: 700;
+}
+.page .current:hover {
+  background: #fff6db;
+  border-color: #df5700;
+  color: #ff6400;
+  font-weight: 700;
+}
+.page .no_pre {
+  color: #ccc;
+  font-weight: 600;
+}
+.page .no_pre:hover {
+  color: #ccc;
+  background: none;
+  border-color: #ccc;
+}
+.page .no_next {
+  color: #ccc;
+  font-weight: 600;
+}
+.page .no_next:hover {
+  color: #ccc;
+  background: none;
+  border-color: #ccc;
+}
 
 .right {
   float: right;

@@ -5,20 +5,8 @@
       <div class="left-top">Products</div>
       <div class="left-con">
         <ul class="left-menu">
-          <li>
-            <a href="javascript:;"
-              id=""
-              title="18650  Lithium Battery Power Bank">18650 Lithium Battery Power Bank</a>
-          </li>
-          <li>
-            <a href="javascript:;"
-              id=""
-              title="Li-Polymer Battery">Li-Polymer Battery</a>
-          </li>
-          <li>
-            <a href="javascript:;"
-              id=""
-              title="Solar Power Bank">Solar Power Bank</a>
+          <li v-for="(li, liIndex) in liArr">
+            <a href="javascript:;">{{li}}</a>
           </li>
         </ul>
       </div>
@@ -29,7 +17,9 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      liArr: ['18650 Lithium Battery Power Bank', 'Li-Polymer Battery', 'Solar Power Bank']
+    };
   },
 
   components: {},
