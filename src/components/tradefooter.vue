@@ -31,14 +31,14 @@
               </td>
               <td style="padding-left:15px; width:40%;line-height:25px;">
                 <p>Contacter: Erin Lee
-                  <br /> Title: Sales Maneger
-                  <br /> Tel: + 86 755 29606763
-                  <br /> Fax: + 86 755 29604250
-                  <br /> Skype: Erin.limeie
-                  <br /> Email:judith@szdqdz.com
-                  <br /> Company: ShenZhen De Qiang Electronics Co., Ltd.
-                  <br /> Shenzhen, Guang Dong Province, China 518104
-                  <br /> &nbsp;
+                  <br/> Title: Sales Maneger
+                  <br/> Tel: + 86 755 29606763
+                  <br/> Fax: + 86 755 29604250
+                  <br/> Skype: Erin.limeie
+                  <br/> Email:judith@szdqdz.com
+                  <br/> Company: ShenZhen De Qiang Electronics Co., Ltd.
+                  <br/> Shenzhen, Guang Dong Province, China 518104
+                  <br/> &nbsp;
                 </p>
               </td>
             </tr>
@@ -48,8 +48,7 @@
         <!--erwei start-->
         <div class="erwei"><img src="../images/erwei.jpg"
             width="116"
-            height="116"
-            alt="" /></div>
+            height="116"/></div>
         <!--erwei end-->
       </div>
       <!--footer top end-->
