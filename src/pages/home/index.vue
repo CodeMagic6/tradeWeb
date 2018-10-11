@@ -18,6 +18,42 @@
             <products></products>
           </div>
         </div>
+        <div v-if="activeTab === 2">
+          <div class="column-1">
+            <sBannerIcon></sBannerIcon>
+            <sBannerText></sBannerText>
+          </div>
+          <div class="product-main">
+            <aboutBar></aboutBar>
+          </div>
+        </div>
+        <div v-if="activeTab === 3">
+          <div class="column-1">
+            <sBannerIcon></sBannerIcon>
+            <sBannerText></sBannerText>
+          </div>
+          <div class="product-main">
+            <products></products>
+          </div>
+        </div>
+        <!-- <div v-if="activeTab === 4">
+          <div class="column-1">
+            <sBannerIcon></sBannerIcon>
+            <sBannerText></sBannerText>
+          </div>
+          <div class="product-main">
+            <aboutBar></aboutBar>
+          </div>
+        </div> -->
+        <div v-if="activeTab === 4">
+          <div class="column-1">
+            <sBannerIcon></sBannerIcon>
+            <sBannerText></sBannerText>
+          </div>
+          <div class="product-main">
+            <productDetails></productDetails>
+          </div>
+        </div>
       </div>
     </div>
     <tradefooter></tradefooter>
@@ -35,6 +71,8 @@ import cardList from '../../components/cardList';
 import sBannerIcon from '../../components/products/sBanner-icon';
 import sBannerText from '../../components/products/sBanner-text';
 import products from '../../components/products/product-menu';
+import aboutBar from '../../components/aboutUs/aboutBar';
+import productDetails from '../../components/productDetails';
 import { mapGetters, mapMutations } from 'vuex';
 export default {
   components: {
@@ -46,7 +84,9 @@ export default {
     cardList,
     sBannerIcon,
     sBannerText,
-    products
+    products,
+    aboutBar,
+    productDetails
   },
   data() {
     return {
