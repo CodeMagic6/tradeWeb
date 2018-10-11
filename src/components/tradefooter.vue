@@ -11,7 +11,6 @@
             <tr class="tr-title">
               <td>About Us</td>
               <td>Products</td>
-              <!-- <td>News</td> -->
               <td>Contact Us</td>
             </tr>
             <tr>
@@ -30,26 +29,16 @@
                   </li>
                 </ul>
               </td>
-              <!-- <td style="width:15%">
-                <ul>
-                  <li>
-                    <a href="/93/"
-                      title="Company News">Company News</a>
-                  </li>
-                  <li>
-                    <a href="/95/"
-                      title="Industry News">Industry News</a>
-                  </li>
-                  <li>
-                    <a href="/155/"
-                      title="Exhibition News">Exhibition News</a>
-                  </li>
-
-                </ul>
-              </td> -->
               <td style="padding-left:15px; width:40%;line-height:25px;">
-                <p>Contacter: Erin Lee<br /> Title: Sales Maneger<br /> Tel: + 86 755 29606763 <br /> Fax: + 86 755 29604250<br /> Skype: Erin.limeie<br /> Email:
-                  <a href="mailto:judith@szdqdz.com">judith@szdqdz.com</a> <br /> Company: ShenZhen De Qiang Electronics Co., Ltd.<br /> Address: 2F, Block A, Shang Fang Industrial Park, Xin Fa Industrial Zone, Xin Qiao Community,Sha Jing Street, Bao&rsquo;AN District, Shenzhen, Guang Dong Province, China 518104 <br /> &nbsp;
+                <p>Contacter: Erin Lee
+                  <br /> Title: Sales Maneger
+                  <br /> Tel: + 86 755 29606763
+                  <br /> Fax: + 86 755 29604250
+                  <br /> Skype: Erin.limeie
+                  <br /> Email:judith@szdqdz.com
+                  <br /> Company: ShenZhen De Qiang Electronics Co., Ltd.
+                  <br /> Shenzhen, Guang Dong Province, China 518104
+                  <br /> &nbsp;
                 </p>
               </td>
             </tr>
@@ -64,62 +53,13 @@
         <!--erwei end-->
       </div>
       <!--footer top end-->
-      <!--live start-->
-      <div class="live">
-        <a href=""
-          title=""><img src="../images/wx.jpg"
-            width="38"
-            height="34"
-            alt="" /></a>&nbsp;&nbsp;&nbsp;
-        <a href="tencent://message/?uin=&Site=2851080500&Menu=yes"
-          title=""><img src="../images/qq.jpg"
-            width="38"
-            height="34"
-            alt="" /></a>&nbsp;&nbsp;&nbsp;
-        <a href="http://amos.us.alitalk.alibaba.com/msg.aw?v=2&uid=&site=enaliint&s=5"
-          title=""><img src="../images/ww.jpg"
-            width="38"
-            height="34"
-            alt="" /></a>&nbsp;&nbsp;&nbsp;
-        <a href="skype:?call"
-          title=""><img src="../images/skype.jpg"
-            width="38"
-            height="34"
-            alt="" /></a>
-      </div>
-      <!--live end-->
       <!--bottom start-->
       <div class="bottom">
         <div class="bottom-left">
           <a>Privacy Policy</a> |
           <a>Legal Notices</a> |
-          <a>Site Map</a><br /> Copyright &copy; 2015 Shenzhen De Qiang Electronics Co. Ltd.
-        </div>
-        <div class="bottom-right">
-          <a href=""
-            title=""
-            target="_blank"><img src="../images/twinter.jpg"
-              width="33"
-              height="34"
-              alt="" /></a>&nbsp;&nbsp;&nbsp;
-          <a href=""
-            title=""
-            target="_blank"><img src="../images/face.jpg"
-              width="33"
-              height="34"
-              alt="" /></a>&nbsp;&nbsp;&nbsp;
-          <a href=""
-            title=""
-            target="_blank"><img src="../images/pink.jpg"
-              width="33"
-              height="34"
-              alt="" /></a>&nbsp;&nbsp;&nbsp;
-          <a href=""
-            title=""
-            target="_blank"><img src="../images/in.jpg"
-              width="33"
-              height="34"
-              alt="" /></a>
+          <a>Site Map</a>
+          <br /> Copyright &copy; 2015 Shenzhen De Qiang Electronics Co. Ltd.
         </div>
       </div>
       <!--bottom end-->
@@ -142,9 +82,6 @@ export default {
         '18650 Lithium Battery Power Bank',
         'Li-Polymer Battery',
         'Solar Power Bank'
-      ],
-      ContactUs: [
-        ''
       ]
     };
   },
