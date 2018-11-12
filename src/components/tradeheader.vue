@@ -2,6 +2,9 @@
   <div>
     <div class="head">
       <div class="wd">
+        <div class="icon">
+          <img style="width: 89px;height: 80px;" src="../images/webimages/logo/ico.jpg">
+        </div>
         <div class="banben">
           <div class="es">Español</div>
           <div class="pu">Português</div>
@@ -34,10 +37,13 @@
 
 <script>
 import { navName } from '../constants';
+import WebSettings from '../settings.js';
 export default {
   data() {
     return {
-      navName
+      navName,
+      WebSettings,
+      baseUrl: '../'
     };
   }
 };
@@ -48,12 +54,18 @@ export default {
 .head {
   clear: both;
   height: 129px;
-  background: url(../images/head.jpg) no-repeat center top;
+  // background: url(../images/head.jpg) no-repeat center top;
 }
 .wd {
+  position: relative;
   width: 1000px;
   margin: 0px auto;
   clear: both;
+  .icon{
+    position: absolute;
+    left: 160px;
+    top: 20px;
+  }
 }
 .head .banben {
   clear: both;
