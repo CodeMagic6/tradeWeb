@@ -26,30 +26,21 @@
         <a class="more"></a>
       </div>
       <div class="new-pro-con">
-        <a class="jt-left"></a>
-        <a class="jt-right"></a>
+        <a @click="turnProd('left')"
+          class="jt-left"></a>
+        <a @click="turnProd('right')"
+          class="jt-right"></a>
         <div id="new-pro">
-          <ul class="newpro"
+          <ul class="newpro fx-row fx-m-start"
             id="newpro">
-            <li>
-              <a class="pro-img"><img src="../images/userfiles/ad/pro1.jpg"
-                  width="320"
-                  height="193" /></a>
-              <a>new product1</a>
+            <li :style="{transform: 'translateX('+moveProd+'px)'}"
+              v-for="(pro, proidx) in productList"
+              :key="proidx">
+              <a class="pro-img"><img :src="pro.url"
+                  :width="pro.width"
+                  :height="pro.height" /></a>
+              <a>{{pro.name}}</a>
             </li>
-            <li>
-              <a class="pro-img"><img src="../images/userfiles/ad/pro1.jpg"
-                  width="320"
-                  height="193" /></a>
-              <a>new product2</a>
-            </li>
-            <li>
-              <a class="pro-img"><img src="../images/userfiles/ad/pro1.jpg"
-                  width="320"
-                  height="193" /></a>
-              <a>new product3</a>
-            </li>
-
           </ul>
         </div>
       </div>
@@ -110,9 +101,36 @@
 </template>
 
 <script>
+let ProIndexNum = 0;
 export default {
   data() {
-    return {};
+    return {
+      // NEW PRODUCTION卡片的数据
+      productList: [
+        {
+          url:
+            'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545912257872&di=ea9f09409d802fdcca28041a47b0a469&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F8cb1cb13495409237be9a76a9858d109b3de4926.jpg',
+          name: 'product1',
+          width: 320,
+          height: 193
+        },
+        {
+          url:
+            'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545912257872&di=ea9f09409d802fdcca28041a47b0a469&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F8cb1cb13495409237be9a76a9858d109b3de4926.jpg',
+          name: 'product2',
+          width: 320,
+          height: 193
+        },
+        {
+          url:
+            'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545912257872&di=ea9f09409d802fdcca28041a47b0a469&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F8cb1cb13495409237be9a76a9858d109b3de4926.jpg',
+          name: 'product3',
+          width: 320,
+          height: 193
+        }
+      ],
+      moveProd: 0
+    };
   },
 
   components: {},
@@ -121,7 +139,27 @@ export default {
 
   mounted() {},
 
-  methods: {}
+  methods: {
+    // 左右切换产品图片
+    turnProd(d) {
+      let { width = 320 } = this.productList[0] && this.productList[0].width;
+      let length = (this.productList && this.productList.length) || 0;
+      if (d === 'left') {
+        if (ProIndexNum <= -length + 1) {
+          ProIndexNum = -length + 1;
+        } else {
+          ProIndexNum -= 1;
+        }
+      } else {
+        if (ProIndexNum >= 0) {
+          ProIndexNum = 0;
+        } else {
+          ProIndexNum += 1;
+        }
+      }
+      this.moveProd = width * ProIndexNum;
+    }
+  }
 };
 </script>
 <style lang='scss' scoped>
@@ -217,6 +255,7 @@ export default {
   clear: both;
 }
 .newpro li {
+  flex-shrink: 0;
   float: left;
   width: 322px;
   height: 225px;

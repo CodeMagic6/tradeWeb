@@ -12,4 +12,14 @@ export default {
 
 <style>
 @import '../static/normal';
+.fx-row{
+  display: flex;
+  flex-direction: row;
+}
+.fx-m-start{
+  justify-content: flex-start;
+}
+.fx-no-shrink{
+  flex-shrink: 0;
+}
 </style>
