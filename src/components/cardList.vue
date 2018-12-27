@@ -2,18 +2,17 @@
 <template>
   <div>
     <!--about start-->
-    <div class="about box">
+    <div @click="$emit('gotoAboutUs')"
+      class="about box">
       <div class="box-title">
         <h1>ABOUT US</h1>
         <a href=""
-          title="more"
           class="more"></a>
       </div>
       <div class="box-img">
         <img src="../images/about.jpg"
           width="287"
-          height="106"
-          alt>
+          height="106">
       </div>
       <div class="box-con">" Company intorduction: Shenzhen De Qiang Electronics Co., Ltd. is located in Fu Yong Bao An distict, very close to Shenzhen airport, the economic center in China.The company are professional to produce... the power bank device for smart phone.Our main "
       </div>
@@ -21,51 +20,34 @@
     <!--about end-->
     <!--new product start-->
     <div class="new-pro">
-      <div class="new-pro-title">
+      <div @click="$emit('gotoProduct')"
+        class="new-pro-title">
         <h1>NEW PRODUCTS</h1>
-        <a href="/3/"
-          title="more"
-          class="more"></a>
+        <a class="more"></a>
       </div>
       <div class="new-pro-con">
-        <a href="javascript:void(0)"
-          title=""
-          class="jt-left"></a>
-        <a href="javascript:void(0)"
-          title=""
-          class="jt-right"></a>
+        <a class="jt-left"></a>
+        <a class="jt-right"></a>
         <div id="new-pro">
           <ul class="newpro"
             id="newpro">
             <li>
-              <a href="#"
-                title="new product1"
-                class="pro-img"><img src="../images/userfiles/ad/pro1.jpg"
+              <a class="pro-img"><img src="../images/userfiles/ad/pro1.jpg"
                   width="320"
-                  height="193"
-                  alt="new product1" /></a>
-              <a href="#"
-                title="new product1">new product1</a>
+                  height="193" /></a>
+              <a>new product1</a>
             </li>
             <li>
-              <a href="#"
-                title="new product2"
-                class="pro-img"><img src="../images/userfiles/ad/pro1.jpg"
+              <a class="pro-img"><img src="../images/userfiles/ad/pro1.jpg"
                   width="320"
-                  height="193"
-                  alt="new product2" /></a>
-              <a href="#"
-                title="new product2">new product2</a>
+                  height="193" /></a>
+              <a>new product2</a>
             </li>
             <li>
-              <a href="#"
-                title="new product3"
-                class="pro-img"><img src="../images/userfiles/ad/pro1.jpg"
+              <a class="pro-img"><img src="../images/userfiles/ad/pro1.jpg"
                   width="320"
-                  height="193"
-                  alt="new product3" /></a>
-              <a href="#"
-                title="new product3">new product3</a>
+                  height="193" /></a>
+              <a>new product3</a>
             </li>
 
           </ul>
@@ -74,37 +56,32 @@
     </div>
     <!--new product end-->
     <!--about start-->
-    <div class="contact box">
+    <div @click="$emit('gotoContact')"
+      class="contact box">
       <div class="box-title">
         <h1>CONTACT US</h1>
-        <a href="/267/"
-          title="more"
-          class="more"></a>
+        <a class="more"></a>
       </div>
       <div class="box-img"><img src="../images/contact.jpg"
           width="287"
-          height="106"
-          alt="" /></div>
+          height="106" /></div>
       <div class="box-con">
         <table style="line-height: 18px; width: 100%">
           <tbody>
             <tr>
-              <td><img alt=""
-                  width="14"
+              <td><img width="14"
                   height="13"
                   src="../images/userfiles/tel.jpg" /></td>
               <td>Tel:0086-755-29606763</td>
             </tr>
             <tr>
-              <td><img alt=""
-                  width="14"
+              <td><img width="14"
                   height="13"
                   src="../images/userfiles/tel1.jpg" /></td>
               <td>Fax:0086-755-29604250</td>
             </tr>
             <tr>
-              <td><img alt=""
-                  width="14"
+              <td><img width="14"
                   height="13"
                   src="../images/userfiles/email.jpg" /></td>
               <td>E-mail:
@@ -112,8 +89,7 @@
               </td>
             </tr>
             <tr>
-              <td style="vertical-align: top"><img alt=""
-                  width="14"
+              <td style="vertical-align: top"><img width="14"
                   height="13"
                   src="../images/userfiles/add.jpg" /></td>
               <td>Add:

@@ -6,7 +6,9 @@
     <div class="center">
       <div class="wd">
         <div v-if="activeTab === 0">
-          <cardList></cardList>
+          <cardList @gotoAboutUs="gotoAboutUs"
+            @gotoProduct="gotoProduct"
+            @gotoContact="gotoContact"></cardList>
           <product></product>
         </div>
         <div v-if="activeTab === 1">
@@ -98,14 +100,22 @@ export default {
   },
   methods: {
     ...mapMutations('home', ['ACTIVETAB']),
-    switchTab(params){
+    switchTab(params) {
+      // Home | Products | About Us | Hot Selling | Contact Us 的序号分别对应 0 1 2 3 4
       let { index } = params;
-      this.ACTIVETAB(index)
+      this.ACTIVETAB(index);
+    },
+    gotoAboutUs() {
+      this.ACTIVETAB(2);
+    },
+    gotoProduct(){
+      this.ACTIVETAB(1);
+    },
+    gotoContact(){
+      this.ACTIVETAB(4);
     }
   },
-  mounted() {
-
-  }
+  mounted() {}
 };
 </script>
 
