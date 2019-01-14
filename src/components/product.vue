@@ -5,28 +5,27 @@
     <div class="product-title">
       <h1>PRODUCTS</h1>
       <a href="/3/"
-        title=""
         class="more1"></a>
     </div>
     <div class="product-con">
       <a href="javascript:void(0)"
-        title=""
-        class="jt-left1"></a>
+        class="jt-left1"
+        @click="turnPic('left')"></a>
       <a href="javascript:void(0)"
-        title=""
-        class="jt-right1"></a>
+        class="jt-right1"
+        @click="turnPic('right')"></a>
       <div id="pro-con">
         <ul class="pro-list fx-row fx-m-start"
           id="pro-list">
-          <li class="fx-no-shrink" v-for="n in 6">
+          <li class="fx-no-shrink"
+            v-for="n in 6"
+            :key="n"
+            :style="{transform: 'translateX('+moveX+'px)'}">
             <a href="/39/42.html"
-              title="solar power bank"
               class="pro-img"><img src="../images/userfiles/product/solor5LED/00.jpg"
                 width="301"
-                height="301"
-                alt="solar power bank" /></a>
-            <a href="/39/42.html"
-              title="solar power bank">solar power bank</a>
+                height="301" /></a>
+            <a href="/39/42.html">{{n}}solar power bank</a>
           </li>
         </ul>
       </div>
@@ -36,9 +35,16 @@
 </template>
 
 <script>
+// 产品的宽度 宽+右边空白
+let proWidth = 314;
+let num = 0;
+// 产品的个数
+let productLength = 6;
 export default {
   data() {
-    return {};
+    return {
+      moveX: 0
+    };
   },
 
   components: {},
@@ -47,7 +53,17 @@ export default {
 
   mounted() {},
 
-  methods: {}
+  methods: {
+    // 切换上一张，下一张图片
+    turnPic(direc) {
+      if (direc === 'left' && num < 0) {
+        num += 1;
+      } else if (direc === 'right' && num > -productLength + 3) {
+        num -= 1;
+      }
+      this.moveX = num * proWidth;
+    }
+  }
 };
 </script>
 <style lang='scss' scoped>

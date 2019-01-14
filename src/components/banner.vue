@@ -3,14 +3,10 @@
   <div class="banner">
     <div class="show">
       <div class="bannerwrap">
-        <a href="javascript:;"><img src="../images/userfiles/ad/banner1.jpg"
-            alt="banner1"></a>
-        <a href="javascript:;"><img src="../images/userfiles/ad/banner2.jpg"
-            alt=""></a>
-        <a href="javascript:;"><img src="../images/userfiles/ad/banner3.jpg"
-            alt=""></a>
-        <a href="javascript:;"><img src="../images/userfiles/ad/banner4.jpg"
-            alt=""></a>
+        <a><img src="../images/userfiles/ad/banner1.jpg"></a>
+        <a><img src="../images/userfiles/ad/banner2.jpg"></a>
+        <a><img src="../images/userfiles/ad/banner3.jpg"></a>
+        <a><img src="../images/userfiles/ad/banner4.jpg"></a>
       </div>
       <div class="bannerDot">
         <div class="dot active"></div>

@@ -127,6 +127,7 @@ export default {
   width: 765px;
 }
 .menu .menu-con li {
+  cursor: pointer;
   float: left;
   width: 125px;
   height: 44px;
