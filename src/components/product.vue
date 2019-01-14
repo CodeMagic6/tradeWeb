@@ -1,107 +1,54 @@
 <!--  -->
 <template>
   <!--product start-->
-        <div class="product wd">
-          <div class="product-title">
-            <h1>PRODUCTS</h1>
-            <a href="/3/"
-              title=""
-              class="more1"></a>
-          </div>
-          <div class="product-con">
-            <a href="javascript:void(0)"
-              title=""
-              class="jt-left1"></a>
-            <a href="javascript:void(0)"
-              title=""
-              class="jt-right1"></a>
-            <div id="pro-con">
-              <ul class="pro-list"
-                id="pro-list">
-                <li>
-                  <a href="/39/42.html"
-                    title="solar power bank"
-                    class="pro-img"><img src="../images/userfiles/product/solor5LED/00.jpg"
-                      width="301"
-                      height="301"
-                      alt="solar power bank" /></a>
-                  <a href="/39/42.html"
-                    title="solar power bank">solar power bank</a>
-                </li>
-                <li>
-                  <a href="/13/23.html"
-                    title="LED built-in power"
-                    class="pro-img"><img src="../images/userfiles/product/list/pro1.jpg"
-                      width="301"
-                      height="301"
-                      alt="LED built-in power" /></a>
-                  <a href="/13/23.html"
-                    title="LED built-in power">LED built-in power</a>
-                </li>
-                <li>
-                  <a href="/13/21.html"
-                    title="LED built-in power"
-                    class="pro-img"><img src="../images/userfiles/product/list/pro8.jpg"
-                      width="301"
-                      height="301"
-                      alt="LED built-in power" /></a>
-                  <a href="/13/21.html"
-                    title="LED built-in power">LED built-in power</a>
-                </li>
-                <li>
-                  <a href="/13/19.html"
-                    title="LED built-in power"
-                    class="pro-img"><img src="../images/userfiles/product/list/pro7.jpg"
-                      width="301"
-                      height="301"
-                      alt="LED built-in power" /></a>
-                  <a href="/13/19.html"
-                    title="LED built-in power">LED built-in power</a>
-                </li>
-                <li>
-                  <a href="/13/7.html"
-                    title="Fluorescent Power"
-                    class="pro-img"><img src="../images/userfiles/product/list/pro6.jpg"
-                      width="301"
-                      height="301"
-                      alt="Fluorescent Power" /></a>
-                  <a href="/13/7.html"
-                    title="Fluorescent Power">Fluorescent Power</a>
-                </li>
-                <li>
-                  <a href="/13/1.html"
-                    title="LED built-in power"
-                    class="pro-img"><img src="../images/userfiles/product/list/pro5.jpg"
-                      width="301"
-                      height="301"
-                      alt="LED built-in power" /></a>
-                  <a href="/13/1.html"
-                    title="LED built-in power">LED built-in power</a>
-                </li>
-
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!--product end-->
+  <div class="product wd">
+    <div class="product-title">
+      <h1>PRODUCTS</h1>
+      <a href="/3/"
+        title=""
+        class="more1"></a>
+    </div>
+    <div class="product-con">
+      <a href="javascript:void(0)"
+        title=""
+        class="jt-left1"></a>
+      <a href="javascript:void(0)"
+        title=""
+        class="jt-right1"></a>
+      <div id="pro-con">
+        <ul class="pro-list fx-row fx-m-start"
+          id="pro-list">
+          <li class="fx-no-shrink" v-for="n in 6">
+            <a href="/39/42.html"
+              title="solar power bank"
+              class="pro-img"><img src="../images/userfiles/product/solor5LED/00.jpg"
+                width="301"
+                height="301"
+                alt="solar power bank" /></a>
+            <a href="/39/42.html"
+              title="solar power bank">solar power bank</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--product end-->
 </template>
 
 <script>
 export default {
-  data () {
-    return {
-    };
+  data() {
+    return {};
   },
 
   components: {},
 
   computed: {},
 
-  mounted(){},
+  mounted() {},
 
   methods: {}
-}
-
+};
 </script>
 <style lang='scss' scoped>
 .product {
@@ -152,6 +99,7 @@ export default {
 }
 .pro-list {
   clear: both;
+  overflow: hidden;
 }
 .pro-list li {
   box-sizing: border-box;
