@@ -111,21 +111,21 @@ export default {
           url:
             'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545912257872&di=ea9f09409d802fdcca28041a47b0a469&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F8cb1cb13495409237be9a76a9858d109b3de4926.jpg',
           name: 'product1',
-          width: 320,
+          width: 322,
           height: 193
         },
         {
           url:
             'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545912257872&di=ea9f09409d802fdcca28041a47b0a469&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F8cb1cb13495409237be9a76a9858d109b3de4926.jpg',
           name: 'product2',
-          width: 320,
+          width: 322,
           height: 193
         },
         {
           url:
             'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545912257872&di=ea9f09409d802fdcca28041a47b0a469&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F8cb1cb13495409237be9a76a9858d109b3de4926.jpg',
           name: 'product3',
-          width: 320,
+          width: 322,
           height: 193
         }
       ],
@@ -142,20 +142,12 @@ export default {
   methods: {
     // 左右切换产品图片
     turnProd(d) {
-      let { width = 320 } = this.productList[0] && this.productList[0].width;
+      let { width = 322 } = this.productList[0] && this.productList[0].width;
       let length = (this.productList && this.productList.length) || 0;
-      if (d === 'left') {
-        if (ProIndexNum <= -length + 1) {
-          ProIndexNum = -length + 1;
-        } else {
-          ProIndexNum -= 1;
-        }
-      } else {
-        if (ProIndexNum >= 0) {
-          ProIndexNum = 0;
-        } else {
-          ProIndexNum += 1;
-        }
+      if (d === 'left' && ProIndexNum < 0) {
+        ProIndexNum += 1;
+      } else if (d === 'right' && ProIndexNum > -length + 1) {
+        ProIndexNum -= 1;
       }
       this.moveProd = width * ProIndexNum;
     }
