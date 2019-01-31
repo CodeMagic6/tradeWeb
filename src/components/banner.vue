@@ -47,6 +47,10 @@ export default {
     }, 8000);
   },
 
+  destroyed(){
+    clearInterval(timer);
+  },
+
   methods: {
     // 点击dot更改banner图片
     changeBanner(index) {
