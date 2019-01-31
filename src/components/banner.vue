@@ -20,6 +20,7 @@
 </template>
 
 <script>
+let timer = null;
 // 广告图片的本地路径
 import banner1 from '../images/userfiles/ad/banner1.jpg';
 import banner2 from '../images/userfiles/ad/banner2.jpg';
@@ -37,9 +38,17 @@ export default {
 
   computed: {},
 
-  mounted() {},
+  mounted() {
+    timer = setInterval(() => {
+      if (this.activeIndex >= this.imgs.length - 1) {
+        this.activeIndex = -1;
+      }
+      this.activeIndex += 1;
+    }, 8000);
+  },
 
   methods: {
+    // 点击dot更改banner图片
     changeBanner(index) {
       this.activeIndex = index;
     }
