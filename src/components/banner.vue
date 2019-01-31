@@ -3,25 +3,34 @@
   <div class="banner">
     <div class="show">
       <div class="bannerwrap">
-        <a><img src="../images/userfiles/ad/banner1.jpg"></a>
-        <a><img src="../images/userfiles/ad/banner2.jpg"></a>
-        <a><img src="../images/userfiles/ad/banner3.jpg"></a>
-        <a><img src="../images/userfiles/ad/banner4.jpg"></a>
+        <img v-for="(im, imidx) in imgs"
+          :style="{transform: 'translateX('+ (-100 * activeIndex) +'%)'}"
+          :src="im"
+          :key="imidx">
       </div>
       <div class="bannerDot">
-        <div class="dot active"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
+        <div v-for="(im, imidx) in imgs"
+          :key="imidx"
+          @click="changeBanner(imidx)"
+          class="dot"
+          :class="{active: activeIndex === imidx}"></div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+// 广告图片的本地路径
+import banner1 from '../images/userfiles/ad/banner1.jpg';
+import banner2 from '../images/userfiles/ad/banner2.jpg';
+import banner3 from '../images/userfiles/ad/banner3.jpg';
+import banner4 from '../images/userfiles/ad/banner4.jpg';
 export default {
   data() {
-    return {};
+    return {
+      activeIndex: 0,
+      imgs: [banner1, banner2, banner3, banner4]
+    };
   },
 
   components: {},
@@ -30,7 +39,11 @@ export default {
 
   mounted() {},
 
-  methods: {}
+  methods: {
+    changeBanner(index) {
+      this.activeIndex = index;
+    }
+  }
 };
 </script>
 <style lang='scss' scoped>
