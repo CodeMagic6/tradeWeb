@@ -32,12 +32,11 @@
 </template>
 
 <script>
-import { navName } from '../constants';
 import WebSettings from '../settings.js';
 export default {
   data() {
     return {
-      navName,
+      navName: ['Home', 'Products', 'About Us', 'Hot Selling', 'Contact Us'],
       WebSettings,
       baseUrl: '../',
       banben: [
@@ -77,7 +76,7 @@ export default {
           class: 'am',
           content: 'NEWYORK'
         }
-      ]
+      ].reverse()
     };
   }
 };

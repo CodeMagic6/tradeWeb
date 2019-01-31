@@ -5,11 +5,3 @@ export const pages = {
   HOTSELL: 'Hot Selling',
   CONTACT: 'Contact Us'
 };
-
-export const navName = [
-  'Home',
-  'Products',
-  'About Us',
-  'Hot Selling',
-  'Contact Us'
-];
