@@ -4,15 +4,18 @@
     <div class="wd fx-row fx-m-start">
       <div class="no-title">NEWS:</div>
       <div>
-        <ul :class="marqueeClass" id="notice-list">
+        <ul :class="marqueeClass"
+          id="notice-list">
           <!-- 跑马灯效果，将li节点复制一份 -->
           <li v-for="(n, nidx) in news"
-            :key="nidx">
-            {{n}}
+            :key="nidx"
+            @click="gotoNoticeDetail(n.url)">
+            {{n.text}}
           </li>
           <li v-for="(n, nidx) in news"
-            :key="nidx+'i'">
-            {{n}}
+            :key="nidx+'i'"
+            @click="gotoNoticeDetail(n.url)">
+            {{n.text}}
           </li>
         </ul>
       </div>
@@ -26,11 +29,20 @@ export default {
     return {
       // 最多支持5条新闻，请后台一次最多控制5条返回
       news: [
-        '第十二届全国电子商务洽淡会在北京召开',
-        '恭喜阿里巴巴在人工智能领域的又一重大突破',
-        '马云说，未来十年最便宜的是房价',
-        '苹果黔驴技穷？股价下跌百分之十',
-        '小米发布最新旗舰，仅售人民币2499，将进军印度市场'
+        {
+          text: '第十二届全国电子商务洽淡会在北京召开',
+          url: 'https://www.baidu.com'
+        },
+        {
+          text: '恭喜阿里巴巴在人工智能领域的又一重大突破',
+          url: 'https://www.163.com'
+        },
+        { text: '马云说，未来十年最便宜的是房价', url: 'https://www.qq.com' },
+        { text: '苹果黔驴技穷？股价下跌百分之十', url: 'https://www.sina.com' },
+        {
+          text: '小米发布最新旗舰，仅售人民币2499，将进军印度市场',
+          url: 'https://www.taobao.com'
+        }
       ]
     };
   },
@@ -53,7 +65,11 @@ export default {
 
   mounted() {},
 
-  methods: {}
+  methods: {
+    gotoNoticeDetail(url) {
+      window.location.href = url;
+    }
+  }
 };
 </script>
 <style lang='scss' scoped>
