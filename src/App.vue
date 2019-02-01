@@ -22,4 +22,7 @@ export default {
 .fx-no-shrink{
   flex-shrink: 0;
 }
+.fx-self-center{
+  align-self: center;
+}
 </style>
