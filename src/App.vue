@@ -25,4 +25,7 @@ export default {
 .fx-self-center{
   align-self: center;
 }
+.fx-self-start{
+  align-self:flex-start;
+}
 </style>

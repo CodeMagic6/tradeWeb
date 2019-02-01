@@ -56,9 +56,9 @@
           <div class="fx-row fx-m-start"
             v-for="(c, cidx) in contactUs"
             :key="cidx">
-            <img class="fx-self-center"
+            <img class="fx-self-start"
               :src="c.url">
-            <div class="fx-self-center">{{c.text}}</div>
+            <div class="fx-self-start">{{c.text}}</div>
           </div>
         </div>
       </div>
@@ -167,6 +167,7 @@ export default {
     border-top: 0px;
     height: 120px;
     img {
+      line-height: 18px;
       width: 14px;
       height: 13px;
     }
