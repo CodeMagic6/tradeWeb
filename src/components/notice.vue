@@ -5,6 +5,7 @@
       <div class="no-title">NEWS:</div>
       <div>
         <ul :class="marqueeClass" id="notice-list">
+          <!-- 跑马灯效果，将li节点复制一份 -->
           <li v-for="(n, nidx) in news"
             :key="nidx">
             {{n}}
@@ -56,6 +57,7 @@ export default {
 };
 </script>
 <style lang='scss' scoped>
+// 跑马灯的scss文件
 @import '../scss/marquee.scss';
 .notice {
   clear: both;
