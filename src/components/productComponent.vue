@@ -26,6 +26,12 @@ export default {
   methods: {
     gotoPd(id){
       console.log('index'+id);
+      this.$router.push({
+        name: 'productDetails',
+        query: {
+          a: 'a'
+        }
+      })
     }
   }
 };

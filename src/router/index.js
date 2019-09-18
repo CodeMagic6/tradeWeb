@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '../pages/home/index'
-import Products from '../pages/products/index'
+import Products from '../pages/productDetails/index'
 
 Vue.use(Router)
 
@@ -13,8 +13,8 @@ export default new Router({
       component: Home
     },
     {
-      path: '/productsDetails',
-      name: 'productsDetails',
+      path: '/productDetails',
+      name: 'productDetails',
       component: Products
     }
   ]
