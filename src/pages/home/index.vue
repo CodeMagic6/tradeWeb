@@ -6,56 +6,27 @@
     <div class="center">
       <div class="wd">
         <div v-if="activeTab === 0">
-          <cardList @gotoAboutUs="gotoAboutUs"
-            @gotoProduct="gotoProduct"
-            @gotoContact="gotoContact"></cardList>
-          <product></product>
+          <!-- home标签内容的组件 -->
+          <homeComponent @gotoAboutUs="gotoAboutUs"
+            @gotoContact="gotoContact"
+            @gotoProduct="gotoProduct"></homeComponent>
         </div>
         <div v-if="activeTab === 1">
-          <div class="column-1">
-            <sBannerIcon></sBannerIcon>
-            <sBannerText></sBannerText>
-          </div>
-          <div class="product-main">
-            <products></products>
-          </div>
+          <!-- product标签内容的组件 -->
+          <productComponent></productComponent>
         </div>
         <div v-if="activeTab === 2">
-          <div class="column-1">
-            <sBannerIcon></sBannerIcon>
-            <sBannerText></sBannerText>
-          </div>
-          <div class="product-main">
-            <aboutBar></aboutBar>
-          </div>
+          <!-- aboutUs标签内容的组件 -->
+          <aboutComponent></aboutComponent>
         </div>
         <div v-if="activeTab === 3">
-          <div class="column-1">
-            <sBannerIcon></sBannerIcon>
-            <sBannerText></sBannerText>
-          </div>
-          <div class="product-main">
-            <products></products>
-          </div>
+          <!-- hotSelling标签内容的组件 -->
+          <hotComponent></hotComponent>
         </div>
         <div v-if="activeTab === 4">
-          <div class="column-1">
-            <sBannerIcon></sBannerIcon>
-            <sBannerText></sBannerText>
-          </div>
-          <div class="product-main">
-            <aboutBar></aboutBar>
-          </div>
+          <!-- contact标签内容的组件 -->
+          <contactComponent></contactComponent>
         </div>
-        <!-- <div v-if="activeTab === 4">
-          <div class="column-1">
-            <sBannerIcon></sBannerIcon>
-            <sBannerText></sBannerText>
-          </div>
-          <div class="product-main">
-            <productDetails></productDetails>
-          </div>
-        </div> -->
       </div>
     </div>
     <tradefooter></tradefooter>
@@ -64,17 +35,16 @@
 
 <script>
 import { pages } from '../../constants';
-import tradeheader from '../../components/tradeheader';
-import banner from '../../components/banner';
-import notice from '../../components/notice';
-import tradefooter from '../../components/tradefooter';
-import product from '../../components/product';
-import cardList from '../../components/cardList';
-import sBannerIcon from '../../components/products/sBanner-icon';
-import sBannerText from '../../components/products/sBanner-text';
-import products from '../../components/products/product-menu';
-import aboutBar from '../../components/aboutUs/aboutBar';
-import productDetails from '../../components/productDetails';
+import tradeheader from '../../components/baseComponent/tradeheader';
+import banner from '../../components/baseComponent/banner';
+import notice from '../../components/baseComponent/notice';
+import tradefooter from '../../components/baseComponent/tradefooter';
+import productDetails from '../../components/baseComponent/productDetails';
+import homeComponent from '../../components/homeComponent';
+import productComponent from '../../components/productComponent';
+import aboutComponent from '../../components/aboutComponent';
+import hotComponent from '../../components/hotComponent';
+import contactComponent from '../../components/contactComponent';
 import { mapGetters, mapMutations } from 'vuex';
 export default {
   components: {
@@ -82,13 +52,12 @@ export default {
     banner,
     notice,
     tradefooter,
-    product,
-    cardList,
-    sBannerIcon,
-    sBannerText,
-    products,
-    aboutBar,
-    productDetails
+    productDetails,
+    homeComponent,
+    productComponent,
+    aboutComponent,
+    hotComponent,
+    contactComponent
   },
   data() {
     return {
@@ -108,10 +77,10 @@ export default {
     gotoAboutUs() {
       this.ACTIVETAB(2);
     },
-    gotoProduct(){
+    gotoProduct() {
       this.ACTIVETAB(1);
     },
-    gotoContact(){
+    gotoContact() {
       this.ACTIVETAB(4);
     }
   },
@@ -138,7 +107,6 @@ export default {
   float: left;
   width: 225px;
 }
-// .left .left-top{clear:both;height:34px;line-height:34px;background:url(../../images/left_top.jpg) no-repeat;color:#FFF;font-size:14px;padding-left:25px;font-weight:bold;}
 .left .left-con {
   clear: both;
   border: 1px solid #cfcfcf;
@@ -151,8 +119,6 @@ export default {
 .left-menu li {
   clear: both;
 }
-// .left-menu li a{display:block; overflow:hidden;width:198px;height:30px;background:url(../../images/blue_jt.png) no-repeat 10px center;padding-left:25px;border-bottom:1px solid #E1E1E1;}
-// .left-menu li a:hover{color:#015294;font-weight:bold;background:#C4C4C4 url(../../images/blue_jt.png) no-repeat 10px center;}
 .left-menu li ul {
   clear: both;
 }
@@ -168,8 +134,6 @@ export default {
   font-weight: bold;
   background: url(../../images/dot.png) no-repeat 10px center;
 }
-
-// #sel01{color:#015294;font-weight:bold;background:#C4C4C4 url(../../images/blue_jt.png) no-repeat 10px center;}
 #sel02 {
   color: #015294;
   font-weight: bold;
@@ -186,7 +150,6 @@ export default {
   width: 761px;
   border: 1px solid #cfcfcf;
 }
-// .right .right-top{clear:both;height:33px;background:url(../../images/right_top.jpg) repeat-x;line-height:33px;}
 .right .right-top h1 {
   float: left;
   width: 300px;

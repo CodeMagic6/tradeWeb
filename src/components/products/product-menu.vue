@@ -9,25 +9,18 @@
         <ul class="prolist">
           <li v-for="n in 9"
             :key="n">
-            <a title="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack "
-              class="pro-img"><img src="../../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
-                width="200"
-                height="200"/></a>
-            <a title="DQDZ Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery Power Pack ">DQDZ Ultr Slim ’Pow...</a>
+            <div class="pro-img"><img src="../../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"/></div>
+            <div>DQDZ Ultr Slim ’Pow...</div>
           </li>
         </ul>
         <!-- 分页 开始 -->
-        <div class="page"
-          style="text-align:center;">
-          <a class="no_pre"
-            title="Previous">Prev</a>
-          <a class="current"
-            title="Go1Page">1</a>
-          <a id="p2"
-            href=""
-            title="Go2Page">2</a>
-          <a href=""
-            title="Next">Next</a>
+        <div class="page">
+          <div class="wrap">
+            <div class="no_pre">Prev</div>
+            <div class="current">1</div>
+            <div id="p2">2</div>
+            <div>Next</div>
+          </div>
         </div>
         <!-- 分页 结束 -->
       </div>
@@ -46,15 +39,9 @@ export default {
   computed: {},
 
   methods: {
-    initPageNum(){
-
-    },
-    initArr(){
-
-    },
-    gotoPage(){
-
-    },
+    initPageNum() {},
+    initArr() {},
+    gotoPage() {}
   },
 
   mounted() {},
@@ -70,8 +57,15 @@ export default {
   height: 32px;
   padding: 20px 0;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
-.page a {
+.page .wrap {
+   display: flex;
+}
+.page div div {
+  justify-content: flex-start;
+  align-content: center;
   padding: 4px 9px;
   border: 1px solid #ccc;
   color: #505050;
@@ -82,7 +76,7 @@ export default {
 .page .more {
   border: 0;
 }
-.page a:hover {
+.page div:hover {
   background: #fff6db;
   border-color: #df5700;
   color: #ff6400;
@@ -188,7 +182,12 @@ export default {
   overflow: hidden;
   width: 200px;
   height: 200px;
+  box-sizing: border-box;
   border: 1px solid #e1e1e1;
+}
+.prolist li .pro-img img {
+  width: 200px;
+  height: 200px;
 }
 .prolist li .pro-img:hover {
   border-color: #69aed4;

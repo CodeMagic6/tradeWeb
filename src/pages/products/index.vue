@@ -7,29 +7,23 @@
         <sBannerText></sBannerText>
       </div>
       <div class="product-main">
-        <products></products>
+        <productsDetails></productsDetails>
       </div>
-      <!-- <aboutUs></aboutUs> -->
-      <!-- <news></news> -->
     </div>
   </div>
 </template>
 
 <script>
-import tradeheader from '../../components/tradeheader';
+import tradeheader from '../../components/baseComponent/tradeheader';
 import sBannerIcon from '../../components/products/sBanner-icon';
 import sBannerText from '../../components/products/sBanner-text';
-import products from '../../components/products/product-menu';
-// import news from '../../components/news/news';
-// import aboutUs from '../../components/aboutUs/aboutBar';
+import productsDetails from '../../components/baseComponent/productDetails';
 export default {
   components: {
     tradeheader,
     sBannerIcon,
     sBannerText,
-    products
-    // news
-    // aboutUs
+    productsDetails
   },
   data() {
     return {};

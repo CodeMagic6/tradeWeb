@@ -22,10 +22,10 @@
 <script>
 let timer = null;
 // 广告图片的本地路径
-import banner1 from '../images/userfiles/ad/banner1.jpg';
-import banner2 from '../images/userfiles/ad/banner2.jpg';
-import banner3 from '../images/userfiles/ad/banner3.jpg';
-import banner4 from '../images/userfiles/ad/banner4.jpg';
+import banner1 from '../../images/userfiles/ad/banner1.jpg';
+import banner2 from '../../images/userfiles/ad/banner2.jpg';
+import banner3 from '../../images/userfiles/ad/banner3.jpg';
+import banner4 from '../../images/userfiles/ad/banner4.jpg';
 export default {
   data() {
     return {

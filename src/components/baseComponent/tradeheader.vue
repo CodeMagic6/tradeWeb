@@ -4,7 +4,7 @@
       <div class="wd">
         <div class="icon">
           <img style="width: 89px;height: 80px;"
-            src="../images/webimages/logo/ico.jpg">
+            src="../../images/webimages/logo/ico.jpg">
         </div>
         <div class="banben">
           <div v-for="(it, idx) in banben"
@@ -12,7 +12,7 @@
             :class="it.class">{{it.content}}</div>
         </div>
         <div class="phone">
-          <img src="../images/phone.png"
+          <img src="../../images/phone.png"
             alt="">
         </div>
       </div>
@@ -32,13 +32,13 @@
 </template>
 
 <script>
-import WebSettings from '../settings.js';
+import WebSettings from '../../settings.js';
 export default {
   data() {
     return {
       navName: ['Home', 'Products', 'About Us', 'Hot Selling', 'Contact Us'],
       WebSettings,
-      baseUrl: '../',
+      baseUrl: '../../',
       banben: [
         {
           class: 'es',
@@ -112,31 +112,31 @@ export default {
     margin-left: 5px;
   }
   .cn {
-    background: url(../images/cn.jpg) no-repeat left center;
+    background: url(../../images/cn.jpg) no-repeat left center;
   }
   .ko {
-    background: url(../images/hanguo.jpg) no-repeat left center;
+    background: url(../../images/hanguo.jpg) no-repeat left center;
   }
   .jp {
-    background: url(../images/riben.jpg) no-repeat left center;
+    background: url(../../images/riben.jpg) no-repeat left center;
   }
   .si {
-    background: url(../images/xinjiapo.jpg) no-repeat left center;
+    background: url(../../images/xinjiapo.jpg) no-repeat left center;
   }
   .fra {
-    background: url(../images/faguo.jpg) no-repeat left center;
+    background: url(../../images/faguo.jpg) no-repeat left center;
   }
   .en {
-    background: url(../images/yingguo.jpg) no-repeat left center;
+    background: url(../../images/yingguo.jpg) no-repeat left center;
   }
   .am {
-    background: url(../images/meiguo.jpg) no-repeat left center;
+    background: url(../../images/meiguo.jpg) no-repeat left center;
   }
   .es {
-    background: url(../images/es.jpg) no-repeat left center;
+    background: url(../../images/es.jpg) no-repeat left center;
   }
   .pu {
-    background: url(../images/pu.jpg) no-repeat left center;
+    background: url(../../images/pu.jpg) no-repeat left center;
   }
 }
 .head .phone {
@@ -150,7 +150,7 @@ export default {
   clear: both;
   height: 44px;
   line-height: 44px;
-  background: url(../images/m_bg.jpg) repeat-x;
+  background: url(../../images/m_bg.jpg) repeat-x;
   .menu-con {
     float: left;
     height: 44px;

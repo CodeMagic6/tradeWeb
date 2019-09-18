@@ -9,7 +9,7 @@
         <div class="more"></div>
       </div>
       <div class="box-img">
-        <img src="../images/about.jpg">
+        <img src="../../images/about.jpg">
       </div>
       <div class="box-con">" Company intorduction: Shenzhen De Qiang Electronics Co., Ltd. is located in Fu Yong Bao An distict, very close to Shenzhen airport, the economic center in China.The company are professional to produce... the power bank device for smart phone.Our main "
       </div>
@@ -50,7 +50,7 @@
         <h1>CONTACT US</h1>
         <div class="more"></div>
       </div>
-      <div class="box-img"><img src="../images/contact.jpg" /></div>
+      <div class="box-img"><img src="../../images/contact.jpg" /></div>
       <div class="box-con">
         <div style="line-height: 18px; width: 100%">
           <div class="fx-row fx-m-start"
@@ -69,10 +69,10 @@
 
 <script>
 let ProIndexNum = 0;
-import tel from '../images/userfiles/tel.jpg';
-import tel1 from '../images/userfiles/tel1.jpg';
-import email from '../images/userfiles/email.jpg';
-import add from '../images/userfiles/add.jpg';
+import tel from '../../images/userfiles/tel.jpg';
+import tel1 from '../../images/userfiles/tel1.jpg';
+import email from '../../images/userfiles/email.jpg';
+import add from '../../images/userfiles/add.jpg';
 export default {
   data() {
     return {
@@ -142,7 +142,7 @@ export default {
   .box-title {
     clear: both;
     height: 34px;
-    background: url(../images/btitle_bg.jpg) no-repeat;
+    background: url(../../images/btitle_bg.jpg) no-repeat;
     line-height: 34px;
     h1 {
       color: #fff;
@@ -177,7 +177,7 @@ export default {
   float: right;
   width: 33px;
   height: 13px;
-  background: url(../images/more.jpg) no-repeat;
+  background: url(../../images/more.jpg) no-repeat;
   margin-top: 9px;
   margin-right: 6px;
 }
@@ -195,21 +195,21 @@ export default {
   .jt-left {
     width: 25px;
     height: 225px;
-    background: url(../images/jt_left.jpg) no-repeat left center;
+    background: url(../../images/jt_left.jpg) no-repeat left center;
     float: left;
     margin-left: 6px;
   }
   .jt-right {
     width: 25px;
     height: 225px;
-    background: url(../images/jt_right.jpg) no-repeat left center;
+    background: url(../../images/jt_right.jpg) no-repeat left center;
     float: right;
     margin-right: 6px;
   }
 }
 .new-pro .new-pro-title {
   height: 34px;
-  background: url(../images/btitle_bg1.jpg) no-repeat;
+  background: url(../../images/btitle_bg1.jpg) no-repeat;
   line-height: 34px;
   h1 {
     color: #fff;

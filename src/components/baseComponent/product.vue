@@ -4,16 +4,13 @@
   <div class="product wd">
     <div class="product-title">
       <h1>PRODUCTS</h1>
-      <a href="/3/"
-        class="more1"></a>
+      <div class="more1"></div>
     </div>
     <div class="product-con">
-      <a href="javascript:void(0)"
-        class="jt-left1"
-        @click="turnPic('left')"></a>
-      <a href="javascript:void(0)"
-        class="jt-right1"
-        @click="turnPic('right')"></a>
+      <div class="jt-left1"
+        @click="turnPic('left')"></div>
+      <div class="jt-right1"
+        @click="turnPic('right')"></div>
       <div id="pro-con">
         <ul class="pro-list fx-row fx-m-start"
           id="pro-list">
@@ -21,11 +18,8 @@
             v-for="n in 6"
             :key="n"
             :style="{transform: 'translateX('+moveX+'px)'}">
-            <a href="/39/42.html"
-              class="pro-img"><img src="../images/userfiles/product/solor5LED/00.jpg"
-                width="301"
-                height="301" /></a>
-            <a href="/39/42.html">{{n}}solar power bank</a>
+            <div class="pro-img"><img src="../../images/userfiles/product/solor5LED/00.jpg"/></div>
+            <div>{{n}}solar power bank</div>
           </li>
         </ul>
       </div>
@@ -73,12 +67,12 @@ export default {
 .product .product-title {
   height: 37px;
   line-height: 35px;
-  background: url(../images/p_line.jpg) no-repeat left bottom;
+  background: url(../../images/p_line.jpg) no-repeat left bottom;
 }
 .product .product-title h1 {
   font-size: 14px;
   color: #005da0;
-  background: url(../images/bfk.jpg) no-repeat left center;
+  background: url(../../images/bfk.jpg) no-repeat left center;
   padding-left: 15px;
   float: left;
 }
@@ -86,7 +80,7 @@ export default {
   float: right;
   width: 38px;
   height: 14px;
-  background: url(../images/more1.jpg) no-repeat;
+  background: url(../../images/more1.jpg) no-repeat;
   margin-top: 11px;
   margin-right: 6px;
 }
@@ -96,15 +90,17 @@ export default {
   margin-top: 20px;
 }
 .product-con .jt-left1 {
+  cursor: pointer;
   width: 25px;
   height: 338px;
-  background: url(../images/jt_left1.jpg) no-repeat left center;
+  background: url(../../images/jt_left1.jpg) no-repeat left center;
   float: left;
 }
 .product-con .jt-right1 {
+  cursor: pointer;
   width: 25px;
   height: 338px;
-  background: url(../images/jt_right1.jpg) no-repeat left center;
+  background: url(../../images/jt_right1.jpg) no-repeat left center;
   float: right;
 }
 

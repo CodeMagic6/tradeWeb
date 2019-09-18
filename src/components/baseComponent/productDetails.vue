@@ -8,15 +8,15 @@
           <div id="preview">
             <div class="jqzoom"
               id="spec-n1"
-              style="line-height:300px;"><img src="../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
-                jqimg="../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
+              style="line-height:300px;"><img src="../../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
+                jqimg="../../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
                 width="300"
                 height="300">
             </div>
             <div id="spec-n5">
               <div class="control"
                 id="spec-left">
-                <img src="../images/left.gif">
+                <img src="../../images/left.gif">
               </div>
               <div id="spec-list">
                 <div style="position:relative;overflow:hidden;z-index:1;width:327px;height:72px;">
@@ -25,10 +25,10 @@
                     :key="n"
                     style="width: 335px; overflow: hidden; position: absolute; left: 0px; top: 0px; margin-top: 0px; margin-left: 0px;">
                     <li v-for="k in 5"
-                      :key="k"><img src="../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
-                        bigpic="../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
+                      :key="k"><img src="../../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
+                        bigpic="../../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
                         class="on"
-                        oripic="../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
+                        oripic="../../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
                         width="60"
                         height="60">
                     </li>
@@ -37,7 +37,7 @@
               </div>
               <div class="control"
                 id="spec-right">
-                <img src="../images/right.gif">
+                <img src="../../images/right.gif">
               </div>
             </div>
           </div>
@@ -246,7 +246,7 @@ export default {
 }
 
 #spec-left {
-  background: url(../images/left.gif) no-repeat;
+  background: url(../../images/left.gif) no-repeat;
   width: 10px;
   height: 45px;
   float: left;
@@ -296,7 +296,7 @@ export default {
 }
 
 #spec-right {
-  background: url(../images/right.gif) no-repeat;
+  background: url(../../images/right.gif) no-repeat;
   width: 10px;
   height: 45px;
   float: right;

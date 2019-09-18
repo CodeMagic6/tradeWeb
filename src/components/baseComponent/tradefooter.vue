@@ -46,7 +46,7 @@
         </div>
         <!--botnav end-->
         <!--erwei start-->
-        <div class="erwei"><img src="../images/erwei.jpg"
+        <div class="erwei"><img src="../../images/erwei.jpg"
             width="116"
             height="116"/></div>
         <!--erwei end-->
@@ -98,7 +98,7 @@ export default {
 .footer {
   clear: both;
   margin-top: 10px;
-  background: #8e8e8e url(../images/footer_bg.jpg) repeat-x;
+  background: #8e8e8e url(../../images/footer_bg.jpg) repeat-x;
   font-family: Times New Roman;
 }
 .footer-top {
@@ -121,7 +121,7 @@ export default {
   vertical-align: top;
 }
 .botnav .tr-title td {
-  background: url(../images/gray_fk.png) no-repeat left center;
+  background: url(../../images/gray_fk.png) no-repeat left center;
   padding-left: 15px;
 }
 .botnav ul {
@@ -130,7 +130,7 @@ export default {
 .botnav ul li {
   height: 30px;
   line-height: 30px;
-  background: url(../images/dot.png) no-repeat left center;
+  background: url(../../images/dot.png) no-repeat left center;
   padding-left: 15px;
 }
 .botnav ul li a {

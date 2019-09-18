@@ -9,4 +9,4 @@ export default {
   config: {
     // navigationBarTitleText: '行程首页'
   }
-};
+}

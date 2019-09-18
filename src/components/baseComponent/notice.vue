@@ -74,15 +74,15 @@ export default {
 </script>
 <style lang='scss' scoped>
 // 跑马灯的scss文件
-@import '../scss/marquee.scss';
+@import '../../scss/marquee.scss';
 .notice {
   clear: both;
   height: 44px;
-  background: url(../images/n_bg.jpg) repeat-x;
+  background: url(../../images/n_bg.jpg) repeat-x;
   .no-title {
     float: left;
     width: 70px;
-    background: url(../images/laba.jpg) no-repeat left center;
+    background: url(../../images/laba.jpg) no-repeat left center;
     color: #005194;
     font-size: 14px;
     height: 44px;
