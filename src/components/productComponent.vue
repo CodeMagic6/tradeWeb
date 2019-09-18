@@ -5,7 +5,7 @@
       <sBannerText></sBannerText>
     </div>
     <div class="product-main">
-      <productsMenu></productsMenu>
+      <productsMenu @gotoPd="gotoPd"></productsMenu>
     </div>
   </div>
 </template>
@@ -24,7 +24,9 @@ export default {
     productsMenu
   },
   methods: {
- 
+    gotoPd(id){
+      console.log('index'+id);
+    }
   }
 };
 </script>

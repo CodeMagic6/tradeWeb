@@ -8,7 +8,8 @@
       <div class="right-con">
         <ul class="prolist">
           <li v-for="n in 9"
-            :key="n">
+            :key="n"
+            @click="gotoPd(n)">
             <div class="pro-img"><img src="../../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"/></div>
             <div>DQDZ Ultr Slim ’Pow...</div>
           </li>
@@ -39,14 +40,15 @@ export default {
   computed: {},
 
   methods: {
+    gotoPd(id){
+      this.$emit('gotoPd', id)
+    },
     initPageNum() {},
     initArr() {},
     gotoPage() {}
   },
 
-  mounted() {},
-
-  methods: {}
+  mounted() {}
 };
 </script>
 <style lang='scss' scoped>
