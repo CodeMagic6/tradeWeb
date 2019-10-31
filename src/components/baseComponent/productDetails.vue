@@ -6,12 +6,7 @@
         <!-- 产品图片展示 开始 -->
         <div class="pro_detail_pic pro_left">
           <div id="preview">
-            <div class="jqzoom"
-              id="spec-n1"
-              style="line-height:300px;"><img src="../../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
-                jqimg="../../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
-                width="300"
-                height="300">
+            <div class="jqzoom"><img src="../../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg">
             </div>
             <div id="spec-n5">
               <div class="control"
@@ -19,18 +14,13 @@
                 <img src="../../images/left.gif">
               </div>
               <div id="spec-list">
-                <div style="position:relative;overflow:hidden;z-index:1;width:327px;height:72px;">
+                <div class="spec-child">
                   <ul class="list-h"
                     v-for="n in 2"
-                    :key="n"
-                    style="width: 335px; overflow: hidden; position: absolute; left: 0px; top: 0px; margin-top: 0px; margin-left: 0px;">
+                    :key="n">
                     <li v-for="k in 5"
                       :key="k"><img src="../../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
-                        bigpic="../../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
-                        class="on"
-                        oripic="../../images/userfiles/product/list/-E9-BB-91-E8-89-B2-E6-AD-A3-E5-8F-8D.jpg"
-                        width="60"
-                        height="60">
+                        class="on">
                     </li>
                   </ul>
                 </div>
@@ -47,8 +37,7 @@
         <div class="pro_detail_name pro_right">
           <div class="pro_name">Name：<b>Ultr Slim ’PowerBank’ External Extended High Capacity (2500 mAh) Portable Spare Battery </b></div>
           <div class="pro_name">Model：DQDZ-001</div>
-          <div class="pro_name">Category：<a href="/241/"
-              title="18650  Lithium Battery Power Bank">18650 Lithium Battery Power Bank</a></div>
+          <div class="pro_name">Category：<a href="/241/">18650 Lithium Battery Power Bank</a></div>
           <div class="short_des">
             <b class="tezheng">Brief：</b><br>
             &nbsp;
@@ -67,33 +56,50 @@
         <div id="tab1"
           class="tab_con"
           style="display:block;">
-          &nbsp;<b style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">Specification:&nbsp;</b><br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
-          <span style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">* Battery Type:Lithium Polymer Battery&nbsp;</span><br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
-          <span style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">* Capacity:2500mAh&nbsp;</span><br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
-          <span style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">* Output:5V/1A&nbsp;</span><br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
-          <span style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">* Input:5V/1A&nbsp;</span><br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
-          <span style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">* Dimension: 143x71x12mm&nbsp;</span><br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
-          <span style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">* Weight: 83g&nbsp;</span><br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
-          <span style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">* Circle Time: Exceed 1000 Times,long service life&nbsp;</span><br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
-          <span style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">* Charge time:3~4 hours(case)&nbsp;</span><br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
-          <span style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">2~3hours(case to iphone)&nbsp;</span><br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
-          <br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
-          <br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
-          <b style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">Feature:&nbsp;</b><br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
-          <span style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">* 2500mAh high power,80%-90% of Iphone 6/6S battery life&nbsp;</span><br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
-          <span style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">* ON-OFF switch to turn on/off power bank&nbsp;</span><br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
-          <span style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">* LED Battery Indicator lights&nbsp;</span><br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
-          <span style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">* Compatible with iPhone 6,6S in All updated system.&nbsp;</span><br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
-          <span style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">* As Apple patent right,we are not allowed to offer the lightning connector. You can charge the bank power by using your OWN original Apple lightning cable.&nbsp;</span><br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
+          <b class="brElem"> Specification:</b><br class="brElem">
+          <div class="SpecWrap"
+            v-for="(sitem, sidx) in Specification"
+            :key="sidx">
+            <span class="SpecificationDesc">
+              {{sitem}}
+            </span>
+            <br class="brElem">
+          </div>
+
+          <br class="brElem">
+          <b class="brElem">Feature:&nbsp;</b><br class="brElem">
+          <div class="FeaWrap"
+            v-for="(fitem, fidx) in Feature"
+            :key="fidx">
+            <span class="FeatureDesc">
+              {{fitem}}
+            </span>
+            <br class="brElem">
+          </div>
+
           <br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
           <b style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">Package:&nbsp;</b><br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
-          <span style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">1x External Battery charger cover&nbsp;</span><br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
-          <span style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">1x User Manual&nbsp;</span><br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
+
+          <div class="PakWrap"
+            v-for="(pitem, pidx) in Package"
+            :key="pidx">
+            <span class="PackageDesc">
+              {{pitem}}
+            </span>
+            <br class="brElem">
+          </div>
+
           <br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
           <b style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">How to use it:&nbsp;</b><br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
-          <span style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">* Show battery status: Press the power button, the LEDs will be lighten immediately, show the power status.The fist light show is 1-20%,the second light show is 20%-40%.the third light show is 40%-60%.the forth light show is 60%-80% and fifth 80-100%&nbsp;</span><br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
-          <span style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">* Charge iPhone:Push your iPhone into the battery Cover. Insert to the connector, make then connect right, see the iPhone screen to identify the charging signal.(It will firstly charge iPhone to full then charge the case.)&nbsp;</span><br style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">
-          <span style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">*&nbsp;</span><b style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">Disassembly Warning:Please do not disassemble iPhone in a large angle to avoid broking the connector of the case</b><span style="font-family: verdana, arial, helvetica, sans-serif; font-size: small; widows: 1;">&nbsp;</span>
+
+          <div class="HuseWrap"
+            v-for="(hitem, hidx) in Huse"
+            :key="hidx">
+            <span class="HuseDesc">
+              {{hitem}}
+            </span>
+            <br class="brElem">
+          </div>
         </div>
         <div id="tab2"
           class="tab_con">
@@ -201,7 +207,32 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      Specification: [
+        '* Battery Type:Lithium Polymer Battery',
+        '* Capacity:2500mAh',
+        '* Output:5V/1A',
+        '* Input:5V/1A',
+        '* Dimension: 143x71x12mm',
+        '* Weight: 83g',
+        '* Circle Time: Exceed 1000 Times,long service life',
+        '* Charge time:3~4 hours(case)',
+        '2~3hours(case to iphone)'
+      ],
+      Feature: [
+        '* 2500mAh high power,80%-90% of Iphone 6/6S battery life',
+        '* ON-OFF switch to turn on/off power bank',
+        '* LED Battery Indicator lights',
+        '* Compatible with iPhone 6,6S in All updated system.',
+        '* As Apple patent right,we are not allowed to offer the lightning connector. You can charge the bank power by using your OWN original Apple lightning cable.'
+      ],
+      Package: ['1x External Battery charger cover', '1x User Manual'],
+      Huse: [
+        '* Show battery status: Press the power button, the LEDs will be lighten immediately, show the power status.The fist light show is 1-20%,the second light show is 20%-40%.the third light show is 40%-60%.the forth light show is 60%-80% and fifth 80-100%',
+        '* Charge iPhone:Push your iPhone into the battery Cover. Insert to the connector, make then connect right, see the iPhone screen to identify the charging signal.(It will firstly charge iPhone to full then charge the case.)',
+        '* Disassembly Warning:Please do not disassemble iPhone in a large angle to avoid broking the connector of the case'
+      ]
+    };
   },
 
   components: {},
@@ -227,6 +258,7 @@ export default {
   height: 300px;
   border: 2px solid #e3e3e3;
   text-align: center;
+  line-height: 300px;
 }
 
 #spec-n5 {
@@ -240,9 +272,16 @@ export default {
 #spec-list {
   float: left;
   overflow: hidden;
-  display: inline;
+  display: inline-block;
   position: relative;
   width: 275px;
+  .spec-child {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 327px;
+    height: 72px;
+  }
 }
 
 #spec-left {
@@ -284,8 +323,22 @@ export default {
   width: 67px;
 }
 
+.list-h {
+  width: 335px;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
 .list-h li {
   float: left;
+  > img {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 #spec-list ul li img {
@@ -555,6 +608,21 @@ export default {
   display: none;
   padding: 10px 10px;
   line-height: 22px;
+}
+
+.SpecificationDesc,
+.FeatureDesc,
+.PackageDesc,
+.HuseDesc {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: small;
+  widows: 1;
+}
+
+.brElem {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: small;
+  widows: 1;
 }
 /******相关产品******/
 .recommand {
