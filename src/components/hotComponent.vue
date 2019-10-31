@@ -5,7 +5,7 @@
       <sBannerText></sBannerText>
     </div>
     <div class="product-main">
-      <productsMenu></productsMenu>
+      <productsMenu @gotoPd="gotoPd"></productsMenu>
     </div>
   </div>
 </template>
@@ -22,12 +22,22 @@ export default {
     sBannerIcon,
     sBannerText,
     productsMenu
+  },
+  methods: {
+    gotoPd() {
+      this.$router.push({
+        name: 'productDetails',
+        query: {
+          a: 'a'
+        }
+      });
+    }
   }
 };
 </script>
 
 <style scoped>
-.hWrap{
+.hWrap {
   display: flex;
   justify-content: space-between;
 }

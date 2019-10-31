@@ -9,8 +9,7 @@
           <!-- home标签内容的组件 -->
           <homeComponent @gotoAboutUs="gotoAboutUs"
             @gotoContact="gotoContact"
-            @gotoProduct="gotoProduct"
-            ></homeComponent>
+            @gotoProduct="gotoProduct"></homeComponent>
         </div>
         <div v-if="activeTab === 1">
           <!-- product标签内容的组件 -->
@@ -84,7 +83,7 @@ export default {
     gotoContact() {
       this.ACTIVETAB(4);
     },
-    gotoPd(id){
+    gotoPd(id) {
       console.log(id);
     }
   },

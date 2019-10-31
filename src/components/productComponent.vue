@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import sBannerIcon from '../components/products/sBanner-icon'
-import sBannerText from '../components/products/sBanner-text'
-import productsMenu from '../components/products/product-menu'
+import sBannerIcon from '../components/products/sBanner-icon';
+import sBannerText from '../components/products/sBanner-text';
+import productsMenu from '../components/products/product-menu';
 export default {
   data() {
     return {};
@@ -24,22 +24,21 @@ export default {
     productsMenu
   },
   methods: {
-    gotoPd(id){
-      console.log('index'+id);
+    gotoPd(id) {
       this.$router.push({
         name: 'productDetails',
         query: {
           a: 'a'
         }
-      })
+      });
     }
   }
 };
 </script>
 
 <style scoped lang="scss">
-.pwrap{
+.pwrap {
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
 }
 </style>
